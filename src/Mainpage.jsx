@@ -6,7 +6,7 @@ import SearchFilters from "./search/SearchFilters";
 import Popover from "./Popover";
 import Footer from "./Footer";
 import Cardcontent from "./Cardcontent";
-import Welcome from "./Welcome";
+import Welcome from "./welcome";
 import { Route, Routes } from "react-router-dom";
 import Mainpage1 from "./Mainpage1";
 import Form from "./Form";
