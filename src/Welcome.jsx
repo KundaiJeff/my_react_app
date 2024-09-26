@@ -1,10 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Routes } from "react-router-dom";
-import Mainpage from "./Mainpage";
 import { NavLink } from "react-router-dom";
-Routes;
 function Welcome() {
   return (
     <div className=" h-screen">
@@ -24,15 +21,15 @@ function Welcome() {
             Looking for a Jobs
           </NavLink>
           <NavLink
-          to="form"
-           className=" animate-bounce bg-cyan-600 rounded-md text-white ">
+            to="form"
+            className=" animate-bounce bg-cyan-600 rounded-md text-white "
+          >
             Signup as Employer & Post jobs
           </NavLink>
         </div>
         <div className=" h-32"></div>
       </div>
-        <Footer className="" />
-    
+      <Footer className="" />
     </div>
   );
 }
