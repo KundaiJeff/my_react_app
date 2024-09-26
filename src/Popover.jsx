@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { textConstants } from "./constants/constants";
-import TextCard from "./popover/textCard";
+import TextCard from "./components/textCard";
 import TittleCard from "./popover/TittleCard";
 import React from "react";
 
