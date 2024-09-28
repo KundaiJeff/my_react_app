@@ -1,15 +1,16 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../header/Header";
 
-import Side from "./Side";
-import SearchFilters from "./search/SearchFilters";
-import Popover from "./Popover";
-import Footer from "./Footer";
-import Cardcontent from "./Cardcontent";
-import Welcome from "./components/welcome";
+import SearchFilters from "../../search/SearchFilters";
+import Popover from "../job popover/Popover";
+import Footer from "../footer/Footer";
+import Cardcontent from "../../Cardcontent";
+import Welcome from "../welcome";
 import { Route, Routes } from "react-router-dom";
 import Mainpage1 from "./Mainpage1";
-import Form from "./Form";
+import Form from "../../Form";
+import About from "../about/about";
+import Aboutpage from "../about/aboutpage";
 
 function Mainpage() {
   return (
@@ -19,10 +20,11 @@ function Mainpage() {
         <Route path="header" element={<Header />} />
         <Route path="search" element={<SearchFilters />} />
         <Route path="cardcontent" element={<Cardcontent />} />
-        <Route path="side" element={<Side />} />
+
         <Route path="footer" element={<Footer />} />
         <Route path="main" element={<Mainpage1 />} />
         <Route path="form" element={<Form />} />
+        <Route path="about" element={<Aboutpage />} />
       </Routes>
     </>
   );

@@ -1,13 +1,9 @@
-
-import Mainpage from "./Mainpage";
-
+import Mainpage from "./components/mainpage/Mainpage";
 
 function App() {
- 
-     
   return (
     <div>
-     <Mainpage/>
+      <Mainpage />
     </div>
   );
 }

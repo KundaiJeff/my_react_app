@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 
-import Card1 from "./Card1";
+import Card1 from "../../Card1";
 import Popover from "./Popover";
 
 function Cardlist(props) {

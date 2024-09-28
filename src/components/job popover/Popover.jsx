@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { textConstants } from "./constants/constants";
-import TextCard from "./components/textCard";
-import TittleCard from "./popover/TittleCard";
+import { textConstants } from "../../constants/constants";
+import TextCard from "../textCard";
+import TittleCard from "../../popover/TittleCard";
 import React from "react";
 
-function Popover({ trigger, children, setTrigger,job  }) {
-  
+function Popover({ trigger, children, setTrigger, job }) {
   return trigger ? (
-    <div className=" bg-opacity-25  bg-black inline-block justify-center   ">
-      <div className=" m-auto  text    bg-white  fixed top-4 rounded-md overflow-scroll w-3/4  h-  bg inset-0 bg-op  justify-center items-center  ">
+    <div className=" bg-opacity-25  bg-primary-400 inline-block justify-center   ">
+      <div className=" m-auto  text    bg-primary-500  fixed top-4 rounded-md overflow-scroll w-3/4  h-  bg inset-0 bg-op  justify-center items-center  ">
         <h1 className=" h-12 shadow-md pt-3 font-bold text-center text-2xl">
           {job.title}
         </h1>
@@ -63,7 +62,7 @@ Popover.propTypes = {
   children: PropTypes.any,
   setTrigger: PropTypes.func,
   job: PropTypes.any,
-  props:PropTypes.any,
+  props: PropTypes.any,
 };
 
 export default Popover;

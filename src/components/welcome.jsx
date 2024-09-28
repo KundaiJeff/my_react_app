@@ -1,35 +1,31 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import { NavLink } from "react-router-dom";
+import About from "./about/about";
 function Welcome() {
   return (
-    <div className=" h-screen">
+    <div className=" ">
       <Header />
-      <div className=" h-3/4 bg-welcome-pattern  ">
-        <h1 className="text-center text-6xl font-semibold text-slate-700">
-          Welcome to
+      <div className=" bg-welcome-pattern  ">
+        <h1 className=" pt-10 text-9xl h-72 text-center  text-white ">
+          Cape Jobs
         </h1>
-        <h1 className="text-white text-9xl text-center  pt-12 font-bold">
-          CapeJobs
-        </h1>
-        <div className="flex flex-row flex-wrap place-content-around mt-10">
-          <NavLink
+
+        <script></script>
+
+        <div className="flex flex-row flex-wrap place-content-around ">
+        <NavLink
             to="/main"
-            className="animate-bounce bg-cyan-600 rounded-md h-12  font-semibold text-white text-center  "
+            className="text-center lg:self-start inline-block h-16 mt-4 animate-bounce bg-cyan-600 px-8 py-2 text-primary-100 text-lg font-semibold rounded-full hover:bg-accent-600 transition-all"
           >
-            Looking for a Jobs
+            Explore Jobs
           </NavLink>
-          <NavLink
-            to="form"
-            className=" animate-bounce bg-cyan-600 rounded-md text-white "
-          >
-            Signup as Employer & Post jobs
-          </NavLink>
+        
         </div>
-        <div className=" h-32"></div>
+        <About />
+        <Footer />
       </div>
-      <Footer className="" />
     </div>
   );
 }
